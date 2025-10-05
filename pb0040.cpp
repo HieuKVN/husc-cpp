@@ -1,14 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Tính tổng S = 1 + 2 + ... + n (1 ≤ n ≤ 10^7)
+
 int main()
 {
-    long n, s = 0;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    long long n;
     cin >> n;
-    for (int i = 0; i <= n; i++)
-    {
-        s = s + i;
-    }
+
+    long long s = n * (n + 1) / 2;
+
     cout << s;
     return 0;
 }

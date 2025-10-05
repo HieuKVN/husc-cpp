@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-    double a, b, c, delta, x, y;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    double a, b, c;
     cin >> a >> b >> c;
-    delta = pow(b, 2) - 4 * a * c;
+
+    double delta = b * b - 4 * a * c;
+
     if (delta < 0)
         cout << "No Solution";
     else if (delta == 0)
-    {
-        x = -b / (2 * a);
-        y = -b / (2 * a);
-        cout << fixed << setprecision(4) << x;
-    }
+        cout << fixed << setprecision(4) << -b / (2 * a);
     else
     {
-        x = (-b + sqrt(delta)) / (2 * a);
-        y = (-b - sqrt(delta)) / (2 * a);
-        cout << fixed << setprecision(4) << x << endl;
-        cout << fixed << setprecision(4) << y;
+        cout << fixed << setprecision(4) << (-b + sqrt(delta)) / (2 * a) << '\n';
+        cout << fixed << setprecision(4) << (-b - sqrt(delta)) / (2 * a);
     }
+
     return 0;
 }

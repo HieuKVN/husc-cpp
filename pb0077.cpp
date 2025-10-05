@@ -1,21 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// In dãy số Lucas từ L0 đến Ln (1 ≤ n ≤ 80)
+
 int main()
 {
-    long long n, i;
-    vector<long long> a;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n;
     cin >> n;
-    for (i = 0; i < n + 1; i++)
-    {
-        if (i == 0)
-            a.push_back(2);
-        else if (i == 1)
-            a.push_back(1);
-        else
-            a.push_back(a[i - 1] + a[i - 2]);
-    }
-    for (i = 0; i < (int)a.size(); i++)
-        cout << a[i] << " ";
+
+    long long L[81];
+    L[0] = 2;
+    L[1] = 1;
+
+    for (int i = 2; i <= n; i++)
+        L[i] = L[i - 1] + L[i - 2];
+
+    for (int i = 0; i <= n; i++)
+        cout << L[i] << " ";
+
     return 0;
 }

@@ -1,23 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// In ký hiệu s lặp lại xi lần cho n số (1 ≤ n ≤ 50, 1 ≤ xi ≤ 100)
+
 int main()
 {
-    string s;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    char s;
     int n;
     cin >> s >> n;
-    vector<int> a(n);
+
     for (int i = 0; i < n; i++)
     {
-        cin >> a[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        for (int l = 0; l < a[i]; l++)
-        {
+        int x;
+        cin >> x;
+        for (int j = 0; j < x; j++)
             cout << s;
-        }
-        cout << endl;
+        cout << '\n';
     }
+
     return 0;
 }

@@ -1,21 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Tính giá trị C theo công thức đề cho
+
 int main()
 {
-    long double x, s = 0;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    long double x;
     cin >> x;
+
     if (x == -3)
         cout << "Div by zero";
     else if (x > 0)
-    {
-        s = x * x + sqrt(x) + 1;
-        cout << fixed << setprecision(6) << s;
-    }
+        cout << fixed << setprecision(6) << x * x + sqrt(x) + 1;
     else
-    {
-        s = (x * x * x + 2 * x + 1) / (x + 3);
-        cout << fixed << setprecision(6) << s;
-    }
+        cout << fixed << setprecision(6) << (x * x * x + 2 * x + 1) / (x + 3);
+
     return 0;
 }

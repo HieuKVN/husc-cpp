@@ -1,11 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Cho hai số nguyên có 4 chữ số m, n (m = abcd, n = efgh)
+// Tính S = d + h và P = a * e
+
 int main()
 {
-    long long m, n;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int m, n;
     cin >> m >> n;
-    cout << (m % 10 + n % 10) << endl;
-    cout << ((m / 1000 % 10) * (n / 1000 % 10));
+
+    int S = m % 10 + n % 10;         // d + h
+    int P = (m / 1000) * (n / 1000); // a * e
+
+    cout << S << '\n'
+         << P;
     return 0;
 }

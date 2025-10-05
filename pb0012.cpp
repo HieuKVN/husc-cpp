@@ -1,16 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Tính giá trị B theo công thức cho sẵn (|x| ≤ 10^5)
+
 int main()
 {
-    long long x, s = 0;
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    long long x;
     cin >> x;
+
+    long long b;
     if (x > 3)
-        s = x * x * x + 2 * x * x + 5 * x;
+        b = x * x * x + 2 * x * x + 5 * x;
     else if (x < 1)
-        s = 5 * x - 8;
+        b = 5 * x - 8;
     else
-        s = x * x - 2 * x + 4;
-    cout << s;
+        b = x * x - 2 * x + 4;
+
+    cout << b;
     return 0;
 }
