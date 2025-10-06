@@ -1,23 +1,22 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
-int main()
-{
-    int L1, R1, L2, R2;
-    cin >> L1 >> R1 >> L2 >> R2;
+// Tìm đoạn giao nhau giữa hai đoạn [L1, R1] và [L2, R2], in -1 nếu không giao
 
-    int left = max(L1, L2);
-    int right = min(R1, R2);
+int main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
 
-    if (left <= right)
-    {
-        cout << left << " " << right << endl;
-    }
-    else
-    {
-        cout << -1 << endl;
-    }
+  long long L1, R1, L2, R2;
+  cin >> L1 >> R1 >> L2 >> R2;
 
-    return 0;
+  long long left = max(L1, L2);
+  long long right = min(R1, R2);
+  if (left <= right) {
+    cout << left << ' ' << right;
+  } else {
+    cout << -1;
+  }
+
+  return 0;
 }
