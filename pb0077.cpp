@@ -12,7 +12,8 @@ int main() {
 	}
 	for (int i = 0; i <= n; i++) {
 		cout << L[i];
-		if (i < n) cout << " ";
+		if (i < n)
+			cout << " ";
 	}
 	cout << endl;
 	return 0;

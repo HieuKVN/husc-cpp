@@ -7,8 +7,8 @@ int main() {
 	int doorMin = min(x, y);
 	int doorMax = max(x, y);
 	if ((min(a, b) <= doorMin && max(a, b) <= doorMax) ||
-			(min(a, c) <= doorMin && max(a, c) <= doorMax) ||
-			(min(b, c) <= doorMin && max(b, c) <= doorMax)) {
+		(min(a, c) <= doorMin && max(a, c) <= doorMax) ||
+		(min(b, c) <= doorMin && max(b, c) <= doorMax)) {
 		cout << "Yes" << endl;
 	} else {
 		cout << "No" << endl;

@@ -10,7 +10,8 @@ int main() {
 	} else if (delta == 0) {
 		cout << fixed << setprecision(4) << -b / (2.0 * a) << endl;
 	} else {
-		cout << fixed << setprecision(4) << (-b + sqrt(delta)) / (2.0 * a) << endl;
+		cout << fixed << setprecision(4) << (-b + sqrt(delta)) / (2.0 * a)
+			 << endl;
 		cout << (-b - sqrt(delta)) / (2.0 * a) << endl;
 	}
 	return 0;
