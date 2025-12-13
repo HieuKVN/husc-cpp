@@ -15,4 +15,5 @@ int main() {
 
 	d = (double)s / n;
 	cout << fixed << setprecision(2) << d << endl;
+	return 0;
 }

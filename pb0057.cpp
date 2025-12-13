@@ -11,4 +11,5 @@ int main() {
 			d++;
 	}
 	cout << d << endl;
+	return 0;
 }
