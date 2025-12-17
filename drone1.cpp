@@ -5,9 +5,8 @@ int main() {
 	int n, L;
 	cin >> n >> L;
 	long long a[n - 1];
-	for (int i = 0; i < n - 1; i++) {
+	for (int i = 0; i < n - 1; i++)
 		cin >> a[i];
-	}
 	sort(a, a + n - 1);
 	if (a[0] > L) {
 		cout << L << endl;
