@@ -11,11 +11,17 @@ This repository stores my personal solutions to programming problems on
 
 ## Status
 
-Some solutions are not available yet, including:
+Missing solutions (pb0001-pb0100):
 
 - `pb0050`
 - `pb0058`
+- `pb0059`
 - `pb0076`
+- `pb0078`
+- `pb0082`
+- `pb0094`
+- `pb0095`
+- `pb0096`
 - `...`
 
 These will be added when completed.
