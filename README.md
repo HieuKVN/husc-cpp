@@ -22,7 +22,6 @@ Missing solutions (pb0001-pb0100):
 - `pb0094`
 - `pb0095`
 - `pb0096`
-- `...`
 
 These will be added when completed.
 
