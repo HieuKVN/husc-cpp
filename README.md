@@ -6,8 +6,7 @@ This repository stores my personal solutions to programming problems on
 ## Repository Structure
 
 - Each solution is organized by **problem code**.
-- Source files are named after their corresponding problem IDs
-  (for example: `pb0001.cpp`).
+- Source files are named after their corresponding problem IDs.
 
 ## Status
 
