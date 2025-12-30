@@ -16,7 +16,7 @@ int main() {
 		} else {
 			transform(st.begin(), st.end(), st.begin(), ::tolower);
 		}
-		cout << st << '\n';
+		cout << st << endl;
 	}
 	return 0;
 }

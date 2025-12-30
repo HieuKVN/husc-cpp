@@ -8,6 +8,6 @@ int main() {
 	for (int i = 1; i <= n; ++i) {
 		s += 1.0 / i;
 	}
-	cout << fixed << setprecision(6) << s << "\n";
+	cout << fixed << setprecision(6) << s << endl;
 	return 0;
 }
